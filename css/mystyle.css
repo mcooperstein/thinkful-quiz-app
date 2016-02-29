@@ -111,6 +111,10 @@ body {
     margin-bottom: 2em;
 }
 
+#result_msg > h3 {
+    margin-bottom: 1.2em;
+}
+
 .start-button,
 .continue-button {
     border-radius: 30px;
@@ -118,6 +122,8 @@ body {
     font-size: 1.5em;
     letter-spacing: 0.1em;
     padding: 10px 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
     width: 150px;
     color: goldenrod;
     background-color: black;
@@ -134,6 +140,10 @@ body {
 .question-number {
     color: aliceblue;
     padding-top: 1.2em;
+}
+
+.bigIncorrect {
+    font-size: 1.2em;
 }
 
 
