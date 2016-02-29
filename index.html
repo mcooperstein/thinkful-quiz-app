@@ -20,7 +20,7 @@
     <section class="intro-section">
         <h2 class="text">How much do you know about movies?</h2>
         <h3 class="text">Take this quiz to find out</h3>
-        <button class="start-button">Start</button>
+        <button class="start-button" id="startQuizButton">Start</button>
     </section>
 
     <section class="quiz-section" style="display: none;">
@@ -41,25 +41,28 @@
     <section class="answerPopUp" id="correct" style="display: none;">
         <h1>Correct!</h1>
         <h2>You got it right!</h2>
-        <button class="continue-button">Continue</button>
+        <button class="start-button" id="correctContinue">Continue</button>
     </section>
 
     <section class="answerPopUp" id="incorrect" style="display: none;">
-        <div id="correctAnswer">
-            <h1>Wrong Answer. The correct answer is: Forrest Gump</h1>
-            <button class="continue-button">Continue</button>
+        <div id="result_msg">
+            <h3>Incorrect:</h3>
         </div>
+        <button class="start-button" id="incorrectContinue">Continue</button>
     </section>
 
     <section class="results-section" style="display: none;">
         <h2 class="text">Congratulations on completing the Ultimate Movie Quiz: Academy Awards Edition!</h2>
         <h3 class="text" id="finalScore">You got 10/10 questions correct. To retake the quiz, just click below.</h3>
-        <div id="result_msg"></div>
         <button class="start-button" id="tryagain">Try Again!</button>
     </section>
+
     <footer class="film-image">
         <img src="http://i.imgur.com/Y51v4pI.gif?2">
     </footer>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="js/app.js" type="text/javascript"></script>
 
 </body>
 
