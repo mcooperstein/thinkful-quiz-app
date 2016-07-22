@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Movie Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header class="film-image">
+        <img src="http://i.imgur.com/Y51v4pI.gif?2">
+    </header>
+
+    <section class="masthead">
+        <h1 class="masthead-header">The Ultimate Movie Quiz:</h1>
+        <p class="masthead-subheader">Academy Awards Edition</p>
+    </section>
+
+    <section class="intro-section col-xs-12">
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+        <div class="intro-text col-xs-8">
+            <h2 class="text">How much do you know about movies?</h2>
+            <h3 class="text">Take this quiz to find out</h3>
+            <button class="start-button" id="startQuizButton">Start</button>
+        </div>
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+    </section>
+
+    <section class="quiz-section col-xs-12" style="display: none;">
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+        <div class="quiz-text col-xs-8">
+            <h2 class="text" id="question">Which movie won the "Best Picture" Award in 1994?</h2>
+            <div id="choices">
+                <input class="option" type="radio" value="0" name="option">
+                <br>
+                <input class="option" type="radio" value="1" name="option">
+                <br>
+                <input class="option" type="radio" value="2" name="option">
+                <br>
+                <input class="option" type="radio" value="3" name="option">
+                <br>
+            </div>
+            <div class="question-number" id="questionNum">Question 1 of 10</div>
+        </div>
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+    </section>
+
+    <section class="answerPopUp col-xs-12" id="correct" style="display: none;">
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+        <div class="answer-text col-xs-8">
+            <h1>Correct!</h1>
+            <h2>You got it right!</h2>
+            <button class="start-button" id="correctContinue">Continue</button>
+        </div>
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+    </section>
+
+    <section class="answerPopUp col-xs-12" id="incorrect" style="display: none;">
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+        <div class="answer-text col-xs-8">
+            <div id="result_msg">
+                <h3>Incorrect:</h3>
+            </div>
+            <button class="start-button" id="incorrectContinue">Continue</button>
+        </div>
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+    </section>
+
+    <section class="results-section col-xs-12" style="display: none;">
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+        <div class="results-text col-xs-8">
+            <h2 class="text">You've completed the Ultimate Movie Quiz: Academy Awards Edition!</h2>
+            <h3 class="text" id="finalScore"></h3>
+            <button class="start-button" id="tryagain">Try Again!</button>
+        </div>
+        <div class="big-oscar col-xs-2">
+            <img src="images/oscar.jpg" height="300px" width="100px" />
+        </div>
+    </section>
+
+    <footer class="film-image">
+        <img src="http://i.imgur.com/Y51v4pI.gif?2">
+    </footer>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--build:js js/main.min.js -->
+    <script src="js/app.js" type="text/javascript"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "thinkful-quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcooperstein/thinkful-quiz-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcooperstein/thinkful-quiz-app/issues"
+  },
+  "homepage": "https://github.com/mcooperstein/thinkful-quiz-app#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.2.2"
+  }
+}
