@@ -52,7 +52,7 @@ body {
 }
 
 .masthead-subheader {
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
     color: darkslategray;
     font-weight: bold;
@@ -137,6 +137,16 @@ div#result_msg {
     background-color: #E9B700;
     border-radius: 20px;
     margin-bottom: 3em;
+}
+
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
+    cursor: pointer;
 }
 
 .start-button {
