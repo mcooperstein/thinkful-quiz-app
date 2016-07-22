@@ -1,0 +1,247 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.text {
+    padding-bottom: 1em;
+}
+
+.film-image {
+    background-image: url(http://i.imgur.com/Y51v4pI.gif?2) no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.masthead {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+}
+
+.masthead-header {
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 25px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.masthead-subheader {
+    font-size: 1.5em;
+    text-align: center;
+    color: darkslategray;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.intro-section {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.intro-section > .intro-text {
+    background-color: #E9B700;
+    border-radius: 20px;
+}
+
+.intro-section > h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    color: aliceblue;
+}
+
+.intro-section > h3 {
+    margin-top: 1em;
+    margin-bottom: 1.1em;
+    font-weight: bolder;
+    font-size: 1.15em;
+    color: aliceblue;
+}
+
+.intro-section > button {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.big-oscar {
+    background-color: white;
+    margin-bottom: 3em;
+}
+
+.quiz-section {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.quiz-section > .quiz-text {
+    background-color: #E9B700;
+    border-radius: 20px;
+    margin-bottom: 3em;
+}
+
+.answerPopUp {
+    background-color: white;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.answerPopUp > .answer-text {
+    background-color: #E9B700;
+    border-radius: 20px;
+    margin-bottom: 3em;
+}
+
+div#result_msg {
+    margin-bottom: 1.2em;
+    margin-top: 1.2em;
+    font-size: 2em;
+}
+
+.results-section {
+    background-color: white;
+    padding-top: 0;
+    margin: 0;
+}
+
+.results-section > .results-text {
+    background-color: #E9B700;
+    border-radius: 20px;
+    margin-bottom: 3em;
+}
+
+.start-button {
+    border-radius: 30px;
+    border-style: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 150px;
+    color: #E9B700;
+    background-color: black;
+}
+
+.continue-button {
+    border-radius: 30px;
+    border-style: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 150px;
+    color: #E9B700;
+    background-color: black;
+}
+
+#choices {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 60%;
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.question-number {
+    color: aliceblue;
+    padding-top: 1.2em;
+    font-size: 1.75em;
+}
+
+.bigIncorrect {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+footer > .film-image {
+    background-image: url(http://i.imgur.com/Y51v4pI.gif?2) no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+@media (max-width: 799px) {
+    .intro-section {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+    }
+    .intro-section > .intro-text {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 3em;
+    }
+    .big-oscar {
+        display: none;
+    }
+    .quiz-section {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: white;
+    }
+    .quiz-section > .quiz-text {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 3em;
+    }
+    .quiz-section > .quiz-text > h2 {
+        font-size: 20px;
+    }
+    .answerPopUp {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .answerPopUp > .answer-text {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 3em;
+    }
+    .results-section {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .results-section > .results-text {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 3em;
+    }
+    h3#finalScore.text {
+        font-size: 16px;
+    }
+    h2.text {
+        font-size: 24px;
+    }
+}
