@@ -201,6 +201,9 @@ footer > .film-image {
     background-color: black;
 }
 
+
+/* -- Media Query Formatting for Small Screen sizes --*/
+
 @media (max-width: 799px) {
     .intro-section {
         padding: 0;
