@@ -84,19 +84,13 @@ $(document).ready(function () {
 
     ];
 
-
-
-
     /*--- Result Message Variable ---*/
-    var feedback = "Well Done";
-
+    var feedback = 'Well Done';
 
     /*--- Variables ---*/
     var questionNum = 0;
     var questionTotal = questions.length;
     var correctTotal = 0;
-
-
 
     /*--- Hide quiz and result section on load ---*/
     $('.quiz-section').hide();
@@ -105,7 +99,7 @@ $(document).ready(function () {
     /*--- Display Questions Function ---*/
     function questionDisplay() {
         //displays the current question
-        $('#questionNum').text("Question " + (questionNum + 1) + " of " + questionTotal);
+        $('#questionNum').text('Question ' + (questionNum + 1) + ' of ' + questionTotal);
         $('#question').text(questions[questionNum].question);
         $('#choices').empty();
         var choiceTotal = questions[questionNum].choices.length;
@@ -115,7 +109,6 @@ $(document).ready(function () {
         }
     }
 
-
     /*--- On start quiz ---*/
 
     $('#startQuizButton').click(function () { //start the quiz and show the first question
@@ -124,7 +117,6 @@ $(document).ready(function () {
         $('.quiz-section').show();
         questionDisplay();
     });
-
 
     /*--- Show quiz questions ---*/
     $('.quiz-section').on('click', '.option', function () {
@@ -142,7 +134,6 @@ $(document).ready(function () {
             $('#result_msg').html("<span class='bigIncorrect'>Incorrect: </span>" + questions[questionNum].correctDetails);
             $('.quiz-section').hide();
         }
-
         //quiz is finished, show results-section
         if ((questionNum + 1) == questionTotal) {
             if (correctTotal < 3) {
@@ -155,7 +146,6 @@ $(document).ready(function () {
                 $('#finalScore').text("You scored " + correctTotal + "/" + questionTotal + ", very impressive!");
             }
             //$('#finalScore').text("You scored " + correctTotal + "/" + questionTotal);
-
             $('start-button').show();
             //hide other "screens"
             $('.quiz-section').hide();
@@ -164,8 +154,6 @@ $(document).ready(function () {
             $('#incorrect').hide();
             $('.results-section').show();
         }
-
-
     });
 
     /*--- On continue quiz ---*/
@@ -175,7 +163,6 @@ $(document).ready(function () {
         $('#correct').hide();
         $('#incorrect').hide();
         //continue to next question
-
         questionNum++;
         questionDisplay();
     });
@@ -187,20 +174,12 @@ $(document).ready(function () {
         //continue to next question
         questionNum++;
         questionDisplay();
-
         //remove previous question correctDetails
-
     });
-
-
-
-
 });
 
-
-
-
 /*--- Load the start section from the results section ---*/
+
 $('.results-section').on('click', '#tryagain', function () {
     location.reload();
 });
