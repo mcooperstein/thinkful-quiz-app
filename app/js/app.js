@@ -9,7 +9,6 @@ $(document).ready(function () {
             correct: 1,
             correctDetails: 'Forrest Gump is the correct answer.'
         },
-
         //Question 2
         {
             question: 'In what year did the Academy expand the field for Best Picture nominees from 5 to 10?',
@@ -17,7 +16,6 @@ $(document).ready(function () {
             correct: 0,
             correctDetails: '2009 is the correct answer.'
         },
-
         //Question 3
         {
             question: 'What movie famously won all 11 Academy Awards (including Best Picture) for which it was nominated?',
@@ -25,7 +23,6 @@ $(document).ready(function () {
             correct: 3,
             correctDetails: 'The Lord of the Rings: The Return of the King is the correct answer.'
         },
-
         //Question 4
         {
             question: 'What is the only romantic comedy film to have ever won Best Picture?',
@@ -33,7 +30,6 @@ $(document).ready(function () {
             correct: 2,
             correctDetails: 'Annie Hall is the correct answer.'
         },
-
         //Question 5
         {
             question: 'Which Martin Scorsese movie is the only one to have won Best Picture?',
@@ -41,7 +37,6 @@ $(document).ready(function () {
             correct: 2,
             correctDetails: 'The Departed is the correct answer.'
         },
-
         //Question 6
         {
             question: 'In 2009, most pundits expected Avatar to win for Best Picture, but it ultimately lost out to what film?',
@@ -49,7 +44,6 @@ $(document).ready(function () {
             correct: 3,
             correctDetails: 'The Hurt Locker is the correct answer.'
         },
-
         //Question 7
         {
             question: 'Which Best Picture Award winner was the highest grossing movie of all time, until it was surpassed by Avatar in 2009?',
@@ -57,7 +51,6 @@ $(document).ready(function () {
             correct: 2,
             correctDetails: 'Titanic is the correct answer.'
         },
-
         //Question 8
         {
             question: 'Which Best Picture has the following famous line: "Of all the gin joints, in all the towns, in all the world, she walks into mine..."?',
@@ -65,7 +58,6 @@ $(document).ready(function () {
             correct: 1,
             correctDetails: 'Casablanca is the correct answer.'
         },
-
         //Question 9
         {
             question: 'Citizen Kane is widely considered to be the greatest film of all time, but did not win Best Picture when it was nominated in 1941. What film won Best Picture that year?',
@@ -73,7 +65,6 @@ $(document).ready(function () {
             correct: 2,
             correctDetails: 'How Green Was My Valley is the correct answer.'
         },
-
         //Question 10
         {
             question: 'Which Best Picture winning film depicts the relationship between a young, self-absorbed hot-shot and his autistic savant brother?',
@@ -81,7 +72,6 @@ $(document).ready(function () {
             correct: 1,
             correctDetails: 'Rain Man is the correct answer.'
         }
-
     ];
 
     /*--- Result Message Variable ---*/
@@ -128,7 +118,6 @@ $(document).ready(function () {
             $('#correct').show();
             $('.quiz-section').hide();
             correctTotal++;
-            //console.log(correctTotal);
         } else {
             $('#incorrect').show();
             $('#result_msg').html("<span class='bigIncorrect'>Incorrect: </span>" + questions[questionNum].correctDetails);
